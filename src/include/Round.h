@@ -9,6 +9,7 @@ class Round {
 private:
     int sizeRourd;
     Pair* _pair;
+    Round* _next;
 public:
     int getSizeRourd() const;
 
@@ -17,6 +18,10 @@ public:
     Pair *getPair() const;
 
     void setPair(Pair *pair);
+
+    Round *getNext() const;
+
+    void setNext(Round *next);
 };
 
 

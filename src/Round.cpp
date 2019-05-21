@@ -15,3 +15,11 @@ Pair *Round::getPair() const {
 void Round::setPair(Pair *pair) {
     _pair = pair;
 }
+
+Round *Round::getNext() const {
+    return _next;
+}
+
+void Round::setNext(Round *next) {
+    _next = next;
+}
