@@ -23,3 +23,11 @@ Round *Round::getNext() const {
 void Round::setNext(Round *next) {
     _next = next;
 }
+
+Round *Round::getPrefLeft() const {
+    return _prefLeft;
+}
+
+void Round::setPrefLeft(Round *prefLeft) {
+    _prefLeft = prefLeft;
+}

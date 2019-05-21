@@ -10,6 +10,7 @@ private:
     int sizeRourd;
     Pair* _pair;
     Round* _next;
+    Round* _prefLeft;
 public:
     int getSizeRourd() const;
 
@@ -22,6 +23,10 @@ public:
     Round *getNext() const;
 
     void setNext(Round *next);
+
+    Round *getPrefLeft() const;
+
+    void setPrefLeft(Round *prefLeft);
 };
 
 
