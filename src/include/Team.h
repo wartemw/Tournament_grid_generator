@@ -8,6 +8,7 @@ private:
     inline static int ID_STATIC = 1;
     string _title;
     int _id;
+    unsigned int _numWin;
 public:
     Team(string title);
 
@@ -16,6 +17,10 @@ public:
     void setTitle(const string &title);
 
     int getId() const;
+
+    unsigned int getNumWin() const;
+
+    void setNumWin(unsigned int numWin);
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_TEAM_H

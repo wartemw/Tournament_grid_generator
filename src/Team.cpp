@@ -15,3 +15,11 @@ void Team::setTitle(const string &title) {
 int Team::getId() const {
     return _id;
 }
+
+unsigned int Team::getNumWin() const {
+    return _numWin;
+}
+
+void Team::setNumWin(unsigned int numWin) {
+    Team::_numWin = numWin;
+}
