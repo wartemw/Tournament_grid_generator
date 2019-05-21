@@ -31,3 +31,11 @@ Round *Round::getPrefLeft() const {
 void Round::setPrefLeft(Round *prefLeft) {
     _prefLeft = prefLeft;
 }
+
+Round *Round::getPrefRight() const {
+    return _prefRight;
+}
+
+void Round::setPrefRight(Round *prefRight) {
+    _prefRight = prefRight;
+}

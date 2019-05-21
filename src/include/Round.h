@@ -8,10 +8,13 @@
 class Round {
 private:
     int sizeRourd;
-    Pair* _pair;
-    Round* _next;
-    Round* _prefLeft;
+    Pair *_pair;
+    Round *_next;
+    Round *_prefLeft;
+    Round *_prefRight;
+
 public:
+
     int getSizeRourd() const;
 
     void setSizeRourd(int sizeRourd);
@@ -27,6 +30,10 @@ public:
     Round *getPrefLeft() const;
 
     void setPrefLeft(Round *prefLeft);
+
+    Round *getPrefRight() const;
+
+    void setPrefRight(Round *prefRight);
 };
 
 
