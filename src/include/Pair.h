@@ -11,6 +11,12 @@ private:
     Team *_loser;
 
 public:
+    Pair();
+
+    Pair(Team *one);
+
+    Pair(Team *one, Team *two);
+
     const vector<Team *> &getTeamList() const;
 
     Team *getWinner() const;

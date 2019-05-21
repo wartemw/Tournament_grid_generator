@@ -1,5 +1,17 @@
 #include "Pair.h"
 
+Pair::Pair() {}
+
+Pair::Pair(Team *one) {
+    _teamList.push_back(one);
+    _winner = one;
+}
+
+Pair::Pair(Team* one,Team* two) {
+    _teamList.push_back(one);
+    _teamList.push_back(two);
+}
+
 const vector<Team *> &Pair::getTeamList() const {
     return _teamList;
 }
