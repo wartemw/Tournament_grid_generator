@@ -1,0 +1,11 @@
+#ifndef TOURNAMENT_GRID_GENERATOR_TEAM_H
+#define TOURNAMENT_GRID_GENERATOR_TEAM_H
+
+class Team {
+private:
+
+public:
+
+};
+
+#endif //TOURNAMENT_GRID_GENERATOR_TEAM_H
