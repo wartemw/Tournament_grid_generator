@@ -8,10 +8,15 @@
 class Round {
 private:
     int sizeRourd;
+    Pair* _pair;
 public:
     int getSizeRourd() const;
 
     void setSizeRourd(int sizeRourd);
+
+    Pair *getPair() const;
+
+    void setPair(Pair *pair);
 };
 
 
