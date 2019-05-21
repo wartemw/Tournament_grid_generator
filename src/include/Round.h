@@ -1,0 +1,10 @@
+#ifndef TOURNAMENT_GRID_GENERATOR_ROUND_H
+#define TOURNAMENT_GRID_GENERATOR_ROUND_H
+
+class Round {
+private:
+public:
+};
+
+
+#endif //TOURNAMENT_GRID_GENERATOR_ROUND_H
