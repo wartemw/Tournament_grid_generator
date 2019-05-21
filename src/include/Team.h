@@ -7,6 +7,7 @@ class Team {
 private:
 
 public:
+    Team(string title);
 
 };
 
