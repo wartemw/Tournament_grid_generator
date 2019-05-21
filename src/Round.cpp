@@ -39,3 +39,23 @@ Round *Round::getPrefRight() const {
 void Round::setPrefRight(Round *prefRight) {
     _prefRight = prefRight;
 }
+
+void Round::print(ostream &os) {
+    if (getPrefLeft() != nullptr) {
+        getPrefLeft()->print(os);
+    }
+
+    for (int i = 0; i < sizeRourd; ++i) os << '\t';
+    if (sizeRourd > 1)
+        os << "---\n";
+    else {
+        os << getPair()->getTeamList()[0]->getTitle() << endl;
+        if (getPair()->getTeamList().size() == 2) {
+            for (int i = 0; i < sizeRourd; ++i) os << '\t';
+            os << getPair()->getTeamList()[1]->getTitle() << endl;
+        }
+    }
+    if (getPrefRight() != nullptr) {
+        getPrefRight()->print(os);
+    }
+}

@@ -34,6 +34,8 @@ public:
     Round *getPrefRight() const;
 
     void setPrefRight(Round *prefRight);
+
+    void print(ostream &os);
 };
 
 
