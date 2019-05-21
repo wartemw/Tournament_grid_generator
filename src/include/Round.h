@@ -7,7 +7,11 @@
 
 class Round {
 private:
+    int sizeRourd;
 public:
+    int getSizeRourd() const;
+
+    void setSizeRourd(int sizeRourd);
 };
 
 
