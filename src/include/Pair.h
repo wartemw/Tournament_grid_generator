@@ -7,9 +7,19 @@
 class Pair {
 private:
     vector<Team *> _teamList;
+    Team *_winner;
+    Team *_loser;
 
 public:
     const vector<Team *> &getTeamList() const;
+
+    Team *getWinner() const;
+
+    void setWinner(Team *winner);
+
+    Team *getLoser() const;
+
+    void setLoser(Team *loser);
 
 };
 
