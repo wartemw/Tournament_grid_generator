@@ -1,6 +1,8 @@
 #ifndef TOURNAMENT_GRID_GENERATOR_TEAMGRAPH_H
 #define TOURNAMENT_GRID_GENERATOR_TEAMGRAPH_H
 
+#include "Stdaf.h"
+
 class TeamGraph {
 private:
 public:
