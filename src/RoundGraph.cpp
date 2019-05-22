@@ -19,3 +19,16 @@ void RoundGraph::init(RoundGraph *root, int x, int y) {
         init(child, x - 70, y + 20);
     }
 }
+
+void RoundGraph::render(Windows *windows) {
+    renderRound(windows, this);
+}
+
+void RoundGraph::renderRound(Windows *windows, RoundGraph *round) {
+    if (round->_pair != nullptr)
+        round->_pair->render(windows);
+    if (round->_prefLeft != nullptr)
+        renderRound(windows, round->_prefLeft);
+    if (round->_prefRight != nullptr)
+        renderRound(windows, round->_prefRight);
+}

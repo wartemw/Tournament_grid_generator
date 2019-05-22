@@ -16,6 +16,10 @@ public:
     RoundGraph(Round *root, int x, int y);
 
     void init(RoundGraph *root, int x, int y);
+
+    void render(Windows *windows);
+
+    void renderRound(Windows *windows, RoundGraph *round);
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_ROUNDGRAPH_H
