@@ -1,5 +1,12 @@
 #include "Windows.h"
 
+Windows::Windows(LogicProgram *logicProgram) : _logicProgram(logicProgram) {}
+
+Windows::~Windows() {
+    /* Закрыть соединение с X сервером */
+    XCloseDisplay(display);
+}
+
 Display *Windows::getDisplay() {
     return display;
 }
@@ -55,10 +62,14 @@ void Windows::createDisplay(unsigned int width, unsigned int height) {
 
 void Windows::loop() {
     /* Бесконечный цикл обработки событий */
+    _logicProgram->prepare(this);
     while (true) {
         XNextEvent(display, &event);
+        _logicProgram->render(this);
         /* При нажатии кнопки-выход */
-        if (event.type == KeyPress)
+        if (event.type == KeyPress) {
             break;
+        }
     }
+    _logicProgram->clear(this);
 }

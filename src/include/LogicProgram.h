@@ -3,6 +3,8 @@
 
 #include "Windows.h"
 
+class Windows;
+
 class LogicProgram {
 public:
     virtual void prepare(Windows *windows) = 0;
