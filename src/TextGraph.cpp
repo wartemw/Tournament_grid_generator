@@ -1,5 +1,7 @@
 #include "TextGraph.h"
 
+TextGraph::TextGraph(const string &text, int x, int y) : text(text), x(x), y(y) {}
+
 string TextGraph::getText() {
     return text;
 }

@@ -9,6 +9,8 @@ private:
     int x;
     int y;
 public:
+    TextGraph(const string &text, int x, int y);
+
     string getText();
 
     void setText(string text);
