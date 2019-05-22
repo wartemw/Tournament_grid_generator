@@ -24,6 +24,11 @@ int Windows::getHeight() const {
     return _height;
 }
 
+Screen *Windows::getDisplaySize() {
+    Display *d = XOpenDisplay(nullptr);
+    return DefaultScreenOfDisplay(d);
+}
+
 void Windows::createDisplay(unsigned int width, unsigned int height) {
     _width = width;
     _height = height;
