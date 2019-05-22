@@ -15,3 +15,11 @@ XEvent &Windows::getEvent() {
 int Windows::getScreen() {
     return screen;
 }
+
+int Windows::getWidth() const {
+    return _width;
+}
+
+int Windows::getHeight() const {
+    return _height;
+}

@@ -9,6 +9,7 @@ private:
     Window window;
     XEvent event;
     int screen;
+    int _width, _height;
 public:
     Display *getDisplay();
 
@@ -17,6 +18,10 @@ public:
     XEvent &getEvent();
 
     int getScreen();
+
+    int getWidth() const;
+
+    int getHeight() const;
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_WINDOWS_H
