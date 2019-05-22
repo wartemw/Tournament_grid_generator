@@ -1,6 +1,8 @@
 #ifndef TOURNAMENT_GRID_GENERATOR_TEXTGRAPH_H
 #define TOURNAMENT_GRID_GENERATOR_TEXTGRAPH_H
 
+#include "Stdaf.h"
+
 class TextGraph {
 private:
 public:
