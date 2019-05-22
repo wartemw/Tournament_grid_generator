@@ -23,3 +23,13 @@ int Windows::getWidth() const {
 int Windows::getHeight() const {
     return _height;
 }
+
+void Windows::loop() {
+    /* Бесконечный цикл обработки событий */
+    while (true) {
+        XNextEvent(display, &event);
+        /* При нажатии кнопки-выход */
+        if (event.type == KeyPress)
+            break;
+    }
+}

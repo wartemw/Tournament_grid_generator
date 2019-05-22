@@ -22,6 +22,8 @@ public:
     int getWidth() const;
 
     int getHeight() const;
+
+    void loop();
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_WINDOWS_H
