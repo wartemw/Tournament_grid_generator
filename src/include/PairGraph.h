@@ -10,6 +10,7 @@ private:
     Pair* pair;
     vector<TeamGraph *> _teamList;
 public:
+    PairGraph(Pair *pair,int x, int y);
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_PAIRGRAPH_H
