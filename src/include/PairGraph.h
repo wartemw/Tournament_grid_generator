@@ -1,6 +1,8 @@
 #ifndef TOURNAMENT_GRID_GENERATOR_PAIRGRAPH_H
 #define TOURNAMENT_GRID_GENERATOR_PAIRGRAPH_H
 
+#include "Stdaf.h"
+
 class PairGraph {
 private:
 public:
