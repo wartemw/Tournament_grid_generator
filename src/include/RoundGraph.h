@@ -13,6 +13,9 @@ private:
     RoundGraph *_prefLeft = nullptr;
     RoundGraph *_prefRight = nullptr;
 public:
+    RoundGraph(Round *root, int x, int y);
+
+    void init(RoundGraph *root, int x, int y);
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_ROUNDGRAPH_H
