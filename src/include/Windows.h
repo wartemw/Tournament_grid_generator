@@ -23,6 +23,8 @@ public:
 
     int getHeight() const;
 
+    void createDisplay(unsigned int width, unsigned int height);
+
     void loop();
 };
 
