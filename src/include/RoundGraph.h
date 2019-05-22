@@ -1,0 +1,11 @@
+#ifndef TOURNAMENT_GRID_GENERATOR_ROUNDGRAPH_H
+#define TOURNAMENT_GRID_GENERATOR_ROUNDGRAPH_H
+
+#include "Stdaf.h"
+
+class RoundGraph {
+private:
+public:
+};
+
+#endif //TOURNAMENT_GRID_GENERATOR_ROUNDGRAPH_H
