@@ -10,6 +10,8 @@ private:
     TextGraph *textGraph;
 public:
     TeamGraph(Team *team, int x, int y);
+
+    void render(Windows *windows);
 };
 
 
