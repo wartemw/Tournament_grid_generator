@@ -2,6 +2,13 @@
 
 TextGraph::TextGraph(const string &text, int x, int y) : text(text), x(x), y(y) {}
 
+void TextGraph::render(Windows *window) {
+    if (window->getEvent().type == Expose) {
+        XDrawString(window->getDisplay(), window->getWindow(), DefaultGC(window->getDisplay(), window->getScreen()), x,
+                    y, text.c_str(), text.size());
+    }
+}
+
 string TextGraph::getText() {
     return text;
 }
