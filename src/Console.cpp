@@ -38,7 +38,56 @@ bool Console::moveToItem(int num) {
 }
 
 void Console::createGrid() {
+    int num;
+    int sizeTeam;
+    string nameTeam;
+    clearScreen();
+    cout << "Выберите тип сетки:" << endl;
+    cout << "\t" << "1) " << "информация о типах," << endl;
+    cout << "\t" << "2) " << "одиночное исключение," << endl;
+    cout << "\t" << "3) " << "назад," << endl;
+    cout << "Введите номер для перехода: ";
 
+    while (!(cin >> num)) {
+        cin.clear();
+        cin.get();
+        break;
+    }
+
+    switch (num) {
+        case 1:
+            //manager.setType(GridManager::SINGLE_ELIMINATION);
+            break;
+        case 2:
+            break;
+        case 3:
+            return;
+        default:
+            cout << "нет " << num << " пункта!" << endl;
+            return;
+    }
+
+    do {
+        clearScreen();
+        cout << "Введите колличество комманд: ";
+        while (!(cin >> sizeTeam)) {
+            cin.clear();
+            cin.get();
+            break;
+        }
+        if (sizeTeam < 2)
+            cout << "Команд должно быть больше 2!" << endl;
+    } while (sizeTeam < 2);
+
+
+    for (int i = 0; i < sizeTeam; ++i) {
+        clearScreen();
+        cout << "Введние навзвание команды номер[" << i + 1 << " из " << sizeTeam << "] : ";
+        cin.ignore();
+        cin >> nameTeam;
+        manager.addTeam(new Team(nameTeam));
+    }
+    manager.createGrid();
 }
 
 void Console::info() {
