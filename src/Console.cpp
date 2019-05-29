@@ -21,7 +21,20 @@ void Console::menu() {
 }
 
 bool Console::moveToItem(int num) {
-    return false;
+    switch (num) {
+        case 1:
+            createGrid();
+            return false;
+        case 2:
+            info();
+            return false;
+        case 3:
+            cout << "До встречи." << endl;
+            return true;
+        default:
+            cout << "нет " << num << " пункта!" << endl;
+            return false;
+    }
 }
 
 void Console::createGrid() {
