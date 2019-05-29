@@ -13,5 +13,5 @@ void Console::createGrid() {
 }
 
 void Console::info() {
-
+    manager.printGrid();
 }
