@@ -1,4 +1,8 @@
 #include "Console.h"
+#include "Windows.h"
+#include "LogicGridGeneration.h"
+
+auto *window = new Windows(new LogicGridGeneration);
 
 void Console::menu() {
     int num = 0;
@@ -6,8 +10,9 @@ void Console::menu() {
         clearScreen();
         cout << "Меню: " << endl;
         cout << "\t" << "1) " << "создать сетку," << endl;
-        cout << "\t" << "2) " << "информация," << endl;
-        cout << "\t" << "3) " << "выход." << endl;
+        cout << "\t" << "2) " << "просмотр в консоле," << endl;
+        cout << "\t" << "3) " << "просмотр в окне," << endl;
+        cout << "\t" << "4) " << "выход." << endl;
         cout << "Введите номер для перехода: ";
 
         while (!(cin >> num)) {
@@ -29,6 +34,10 @@ bool Console::moveToItem(int num) {
             info();
             return false;
         case 3:
+            window->getLogicProgram()->set(manager.getRoot());
+            window->createDisplay(640, 480);
+            return false;
+        case 4:
             cout << "До встречи." << endl;
             return true;
         default:
@@ -43,8 +52,8 @@ void Console::createGrid() {
     string nameTeam;
     clearScreen();
     cout << "Выберите тип сетки:" << endl;
-    cout << "\t" << "1) " << "информация о типах," << endl;
-    cout << "\t" << "2) " << "одиночное исключение," << endl;
+    cout << "\t" << "1) " << "одиночное исключение," << endl;
+    cout << "\t" << "2) " << "информация о типах," << endl;
     cout << "\t" << "3) " << "назад," << endl;
     cout << "Введите номер для перехода: ";
 
