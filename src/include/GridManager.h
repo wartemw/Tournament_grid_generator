@@ -19,6 +19,8 @@ public:
     void printGrid();
 
     Round *getRound(int sizeRound, int &team, int &pair, int &index, bool max);
+
+    Round *getRoot() const;
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_GRIDMANAGER_H

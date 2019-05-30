@@ -73,3 +73,7 @@ void Windows::loop() {
     }
     _logicProgram->clear(this);
 }
+
+LogicProgram *Windows::getLogicProgram() const {
+    return _logicProgram;
+}

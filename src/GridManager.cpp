@@ -77,3 +77,7 @@ Round *GridManager::getRound(int sizeRound, int &team, int &pair, int &index, bo
         }
     return result;
 }
+
+Round *GridManager::getRoot() const {
+    return root;
+}

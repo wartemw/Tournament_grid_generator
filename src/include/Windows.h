@@ -36,6 +36,8 @@ public:
     void createDisplay(unsigned int width, unsigned int height);
 
     void loop();
+
+    LogicProgram *getLogicProgram() const;
 };
 
 #endif //TOURNAMENT_GRID_GENERATOR_WINDOWS_H
