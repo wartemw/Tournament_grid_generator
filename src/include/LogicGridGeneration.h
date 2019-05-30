@@ -7,10 +7,12 @@
 
 class Windows;
 
-class LogicGridGeneration: public LogicProgram {
+class LogicGridGeneration : public LogicProgram {
 private:
     RoundGraph *text;
 public:
+    void set(Round *round) override;
+
     void prepare(Windows *windows) override;
 
     void render(Windows *windows) override;
