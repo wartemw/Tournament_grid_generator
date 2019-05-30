@@ -10,6 +10,9 @@
 #include <vector>
 #include <math.h>
 
+#include <X11/Xlib.h>
+#include <X11/Xresource.h>
+
 
 using namespace std;
 
