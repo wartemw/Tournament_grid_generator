@@ -1,11 +1,10 @@
-#include "Windows.h"
-#include "LogicGridGeneration.h"
+#include "Console.h"
 
 int main() {
+
     setlocale(LC_ALL, "Russian");
-    auto *window = new Windows(new LogicGridGeneration);
-
-    window->createDisplay(640, 480);
-
+    cout << "Приведствую в генерации турнирной сетки!" << endl;
+    Console cons;
+    cons.menu();
     return 0;
 }
