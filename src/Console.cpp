@@ -100,5 +100,8 @@ void Console::createGrid() {
 }
 
 void Console::info() {
+    clearScreen();
     manager.printGrid();
+    char i;
+    cin >> i;
 }
