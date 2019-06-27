@@ -13,7 +13,13 @@ file(GLOB SPPS
         "${PROJECT_SOURCE_DIR}/src/include/*.h"
         "${PROJECT_SOURCE_DIR}/src/**/*.cpp"
         "${PROJECT_SOURCE_DIR}/src/*.cpp"
-        "${PROJECT_SOURCE_DIR}/*.cpp"
+        )
+file(GLOB SPPS_TEST
+        "${PROJECT_SOURCE_DIR}/test/include/**/*.h"
+        "${PROJECT_SOURCE_DIR}/test/include/*.h"
+        "${PROJECT_SOURCE_DIR}/test/**/*.cpp"
+        "${PROJECT_SOURCE_DIR}/test/*.cpp"
         )
 
-add_executable(${PROJECT_NAME} ${SPPS})
+add_executable(${PROJECT_NAME} ${SPPS} main.cpp)
+add_executable(${PROJECT_NAME}_test ${SPPS} ${SPPS_TEST} main_test.cpp)
