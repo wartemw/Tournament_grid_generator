@@ -20,6 +20,7 @@ public:
     void menu();
 
     bool moveToItem(int num);
+    bool moveToitem(int num);
 
     void createGrid();
 

@@ -46,6 +46,27 @@ bool Console::moveToItem(int num) {
     }
 }
 
+bool Console::moveToitem(int num) {
+    switch (num) {
+        case 1:
+            //createGrid();
+            return false;
+        case 2:
+            //info();
+            return false;
+        case 3:
+            //window->getLogicProgram()->set(manager.getRoot());
+            //window->createDisplay(640, 480);
+            return false;
+        case 4:
+            //cout << "До встречи." << endl;
+            return true;
+        default:
+            cout << "нет " << num << " пункта!" << endl;
+            return false;
+    }
+}
+
 void Console::createGrid() {
     int num;
     int sizeTeam;
@@ -100,8 +121,5 @@ void Console::createGrid() {
 }
 
 void Console::info() {
-    clearScreen();
     manager.printGrid();
-    char i;
-    cin >> i;
 }
