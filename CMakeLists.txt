@@ -23,3 +23,5 @@ file(GLOB SPPS_TEST
 
 add_executable(${PROJECT_NAME} ${SPPS} main.cpp)
 add_executable(${PROJECT_NAME}_test ${SPPS} ${SPPS_TEST} main_test.cpp)
+target_compile_features(${PROJECT_NAME}  PRIVATE cxx_std_17)
+target_compile_features(${PROJECT_NAME}_test  PRIVATE cxx_std_17)
