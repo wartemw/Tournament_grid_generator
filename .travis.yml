@@ -7,5 +7,5 @@ script:
   - cd build
   - cmake ..
   - make
-#  - make test
-#  - ./bin/Test
+  - make
+  - ./tournament_grid_generator_test
