@@ -9,9 +9,9 @@ class Round {
 private:
     int sizeRourd;
     Pair *_pair;
-    Round *_next;
-    Round *_prefLeft;
-    Round *_prefRight;
+    Round *_next = nullptr;
+    Round *_prefLeft = nullptr;
+    Round *_prefRight = nullptr;
 
 public:
 
