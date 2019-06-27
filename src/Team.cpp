@@ -1,7 +1,7 @@
 #include "include/Team.h"
 
 Team::Team(string title) : _title(std::move(title)) {
-    _id = ID_STATIC++;
+
 }
 
 const string &Team::getTitle() const {

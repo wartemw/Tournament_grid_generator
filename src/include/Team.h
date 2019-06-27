@@ -5,9 +5,8 @@
 
 class Team {
 private:
-    inline static int ID_STATIC = 1;
     string _title;
-    int _id;
+    int _id = 1;
     unsigned int _numWin;
 public:
     Team(string title);
