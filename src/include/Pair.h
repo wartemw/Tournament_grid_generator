@@ -7,8 +7,8 @@
 class Pair {
 private:
     vector<Team *> _teamList;
-    Team *_winner;
-    Team *_loser;
+    Team *_winner = nullptr;
+    Team *_loser = nullptr;
 
 public:
     Pair();
