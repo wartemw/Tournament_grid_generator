@@ -1,1 +1,1 @@
-# Tournament_grid_generator
+# Tournament_grid_generator [![Build Status](https://travis-ci.org/wartemw/tournament_grid_generator.svg?branch=master)](https://travis-ci.org/wartemw/tournament_grid_generator)
