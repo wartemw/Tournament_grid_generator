@@ -1,8 +1,4 @@
 #include "Console.h"
-#include "Windows.h"
-#include "LogicGridGeneration.h"
-
-auto *window = new Windows(new LogicGridGeneration);
 
 void Console::menu() {
     int num = 0;
@@ -11,8 +7,7 @@ void Console::menu() {
         cout << "Меню: " << endl;
         cout << "\t" << "1) " << "создать сетку," << endl;
         cout << "\t" << "2) " << "просмотр в консоле," << endl;
-        cout << "\t" << "3) " << "просмотр в окне," << endl;
-        cout << "\t" << "4) " << "выход." << endl;
+        cout << "\t" << "3) " << "выход." << endl;
         cout << "Введите номер для перехода: ";
 
         while (!(cin >> num)) {
@@ -34,10 +29,6 @@ bool Console::moveToItem(int num) {
             info();
             return false;
         case 3:
-            window->getLogicProgram()->set(manager.getRoot());
-            window->createDisplay(640, 480);
-            return false;
-        case 4:
             cout << "До встречи." << endl;
             return true;
         default:
